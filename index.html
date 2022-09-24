@@ -9,14 +9,60 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">freeCodeCamp Survey Form</p>
+    <h1 id="title">This is the greatest Survey Form!</h1>
+    <p id="description">Zidny & Francisco Survey Form</p>
     <form action="" id="survey-form">
-      <input type="text" id="name" required>
-      <input type="email" id="email" required>
-      <input type="number" name="number" id="number" min="0" max="100">
+      <label for="name" id="name-label">
+        Name
+      </label>
+      <input type="text" id="name" required placeholder="Enter your name here">
       
-       
+      <label for="email" id="email-label">
+        Email
+      </label>
+      <input type="email" id="email" required placeholder="Enter your email here">
+      
+      <label for="number" id="number-label">
+        number
+      </label>
+      <input type="number" name="number" id="number" min="0" max="100" placeholder="Enter your number here">
+      <br>
+      <br>
+      <select name="select" id="dropdown">
+        <option value="bad">Bad</option>
+        <option value="good">Good</option>
+        <option value="great">Great</option>
+        <option value="Excellent">Excellent</option>
+      </select>
+      <br>
+      <br>
+      <label for="Beverages">
+        Beverages:
+      </label>
+      <br>
+      <br>
+      <input type="radio" name="Beverages" value="water">
+      <input type="radio" name="Beverages" value="soda">
+      <input type="radio" name="Beverages" value="beer">
+      <br>
+      <br>
+      <label for="Food">
+        Food:
+      </label>
+      <br>
+      <br>
+      <input type="checkbox" name="Food" value="Pizza">
+      <input type="checkbox" name="Food" value="Lasagna">
+      <input type="checkbox" name="Food" value="Pasta">
+      <br>
+      <br>
+      <textarea name="additional info" id="textarea" cols="30" rows="10">
+        Additional info
+      </textarea>
+      <br>
+      <br>
+      <button id="submit">Submit</button>
+
     </form>
 
 
